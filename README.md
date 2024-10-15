@@ -20,13 +20,11 @@ This project is in fulfillment of the [CPSC 312 2024W1 project requirements](htt
 
 Our team is:
 
-+ Team Member Name 1 (student # 1): optional awesome nickname 1
-+ Team Member Name 2 (student # 2): optional awesome nickname 2
-+ Team Member Name 3 (student # 3): optional awesome nickname 3
-+ If you have a fourth member: Team Member Name 4 (student # 4): optional awesome nickname 4
-+ If you have a fifth member: Team Member Name 5 (student # 5): optional awesome nickname 5
++ Ivan Orozco Vasquez (29979267): Wazmo 🤼 
++ Grace Gale (52524915): optional awesome nickname 2
++ Kae Rene Boey (82279530): kay-othic
 
-We call ourselves: optional awesome team name.
+We call ourselves: Typeclass Clowns
 
 ## Acknowledgments
 
