@@ -1,18 +1,10 @@
 # CPSC 312 Project
 
-Project Template for CPSC 312 Projects. Use this for both your proposal and final project submission.
-
-(Since you are submitting a link to a specific commit, we will be able to tell the difference.)
-
-The template to edit begins below. You can delete this header section once you've begun.
-
-We will post some additional material to include when you reach the final project stage.
-
 # Wordle 2.0!
 
-This will be replaced with a very brief (one paragraph, 2-3 sentences) overview of the project.
-
-Leave the following sentence in so you can easily link back to the requirements and *especially* rubric while editing your project:
+Our project will be a version of Wordle with more visual flare! Specifically, completion of the puzzle, 
+depending on the number of guesses taken, will display a different celebratory animation! 
+Additionally, there will be no limits of how many wordles a player can complete each day! 🤡
 
 This project is in fulfillment of the [CPSC 312 2024W1 project requirements](https://steven-wolfman.github.io/cpsc-312-website-2024W1/project.html).
 
@@ -20,69 +12,89 @@ This project is in fulfillment of the [CPSC 312 2024W1 project requirements](htt
 
 Our team is:
 
++ Grace Gale (52524915): optional-awesome-nickname-2
 + Ivan Orozco Vasquez (29979267): Wazmo 🤼 
-+ Grace Gale (52524915): optional awesome nickname 2
 + Kae Rene Boey (82279530): kay-othic
++ Kyle Webster (68017623): Mr. Lizard
++ Sophia Schwandt (33428384): optional-awesome-nickname-3
 
-We call ourselves: Typeclass Clowns
+We call ourselves: Typeclass Clowns 🤡
 
 ## Acknowledgments
 
 We surely built on the work of others! Here are resources and people we got support from:
 
 + A list of acknowledgments with a brief explanation of support received, e.g.:
-  "We used Github Copilot extensively to generate first-pass implementations of chunks of the project that we had specified.
-  We then manually adjusted and adapted these to our needs."
+  ChattGPT:
+  - We used chatgpt to come up with our team nam
+
+  Sources of Reference:
+  - OG Wordle Game: https://www.nytimes.com/games/wordle/index.html
+  - 6 letter words: https://www.litscape.com/words/length/6_letters/6_letter_words.html 
 
 ## Product Pitch
 
-Replace this with a pitch for your project and the problem it solves. This is your vision for what the project
-would like like as a complete product, ready for awesome action. (Yes, awesomeness seems to be a theme.)
-It may be as short as a couple of paragraphs, or it may be longer. It should **definitely** take less than 4 minutes
-to read carefully and thoroughly.
+What's wrong with wordle:
+- not flamboyant enough!
+- 6 letters instead of 5, wordle has 6 letters, why are you guessing 5??? (wordle, clowns, rubric)
+- daily limit thing
+
+The product:
+- better wordle!
+- with celebratory animations for completion
+- 'limited edition' animations (wordle burns and turns to ashes for halloween🔥, pie day!)
+- no daily limits
+- keep score (of streaks, guessing stats, leaderboard & regional leaderboard)
+- online!
 
 Be sure that this touches clearly on the [project requirements](https://steven-wolfman.github.io/cpsc-312-website-2024W1/project.html#project-requirements).
 
-Good goals to aim for are from the top two rubric items for proposal grading:
-
-> Exciting and language-appropriate product idea tackling a problem that is clearly compelling to a significant audience.
-
-Or:
-
-> Solid and language-appropriate product idea with a problem that is of real interest to the submitting team.
-
-(It's easy to focus on the product and not the problem. Remember to include both!)
 
 ## Minimal Viable Project
 
-Replace this with a description of the minimal viable project you will actually build for CPSC 312 (if this becomes your final project).
-It may be as short as a few paragraphs, or it may be longer. It should **definitely** take less than 4 minutes
-to read carefully and thoroughly.
 
 Make clear:
 + how this builds meaningfully toward your product pitch above, without being nearly as much work,
+- the final project envisions multiple variants of things (i.e. celebratory animations, dif types of leaderboard)
+
 + how it builds on the strength and power of the language, and
+- input recognition needed (IO as learned in class recently)
+- we evaluate letter by letter, so haskell treating strings as list of char makes it easier
+- will definitely need high order functions and function composition 
+
 + how it leads naturally to learning and applying some new element of the language (including what that element is!)
+- a GUI! (animation, colour, formatting displays etc)
+- how to make something web-based
 
-Good goals to aim for are from the top two rubric items for proposal grading:
 
-> The minimal viable project (MVP) builds on the strengths and power of the language in exciting ways that will clearly lead to excellent learning for students.
 
-Or:
 
-> The MVP clearly builds significantly on the language and will lead in interesting and natural ways to learning for the students.
 
 ## Proof of Concept
 
-Replace this with a description of your proof-of-concept. This may be as short as a few paragraphs, or it may be longer.
-It should **definitely** take less than 4 minutes to read carefully and thoroughly, though working through and running the
-code may take an extra 4 minutes. (Your guidance and links should make it easy for us to work through the code.)
 
 Tell us:
 
 + what key element of your project the proof-of-concept focuses on
+- algorithm to check which letters are right (?) based off user input [at min: check if letter is in word]
+- outputs _ letter not in word, * if in word but not right place, letter itself if in right place
+- outputs instructions and outputs
+
 + what makes that such an important element
+- it's the backbone that makes wordle word
+- no checking algorith = no winning = :((
+- players need the feedback in order to continue playing
+- its the core algorithm of wordle
+
+
 + how completing this gives you confidence that, with sufficient work, you could complete the full (minimal viable) project
+- the algorithm is the core of the game, after this, we just need to make the target word more dynamic, UI more friendly, add animated flares
+- UI stuff doesn't affect if the program runs, just aesthetics
+- more flexibility with UI elements, algorithm needs to work
+
+- target word will be hardcoded for now
+
+
 
 Include links (likely even line-level links, which are easy to create in Github) throughout to critical pieces of
 the code to make it easy for us to understand what you've accomplished and how it fulfills the requirements.
@@ -92,6 +104,9 @@ Also include instructions for us to test and run your code. (See our guidelines 
 A good goal to aim for is the top rubric item from proposal grading:
 
 > Fully functional proof-of-concept is easy to use and review, and it clearly demonstrates a key element necessary for the overall project.
+
+
+
 
 ### How to test and run the code: Haskell
 
@@ -104,6 +119,8 @@ Note: We expect to be able to test your code by running `stack test`. Included a
 We should be able to further explore your code's functionality by running `stack ghci`, and you should instruct us on some interesting cases to try.
 
 If you include instructions different from these, be **absolutely sure** that they will work well for us in whatever environment we run your code and that they will be as easy to use as the instructions above!
+
+
 
 ### How to test and run the code: Prolog
 
