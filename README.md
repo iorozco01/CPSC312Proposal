@@ -8,7 +8,7 @@ The template to edit begins below. You can delete this header section once you'v
 
 We will post some additional material to include when you reach the final project stage.
 
-# Insert My Excellent Project Title Here
+# Wordle 2.0!
 
 This will be replaced with a very brief (one paragraph, 2-3 sentences) overview of the project.
 
